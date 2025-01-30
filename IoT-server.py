@@ -4,7 +4,7 @@ import random
 import json
 
 # Konfigurer MQTT-klienten
-BROKER_IP = "10.2.8.52"  # Sett IP-adressen til IoT-serveren
+BROKER_IP = "172.20.10.7"  # Sett IP-adressen til IoT-serveren
 BROKER_PORT = 1883  
 TOPIC = "iot/device/data"
 
