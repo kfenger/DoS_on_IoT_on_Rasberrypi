@@ -4,15 +4,15 @@ import random
 import json
 
 # Konfigurer MQTT-klienten
-BROKER_IP = "172.20.10.7"  # Sett IP-adressen til IoT-serveren
+BROKER = "10.0.0.18"
+TOPIC = "raspberry_pi/test"
 BROKER_PORT = 1883  
-TOPIC = "iot/device/data"
 
 # Opprett MQTT-klient
 client = mqtt.Client()
 
 # Koble til broker
-client.connect(BROKER_IP, BROKER_PORT, 60)
+client.connect(BROKER, BROKER_PORT, 60)
 print("Starter IoT-enhet MQTT-server er oppe og kjører!")
 
 try:
